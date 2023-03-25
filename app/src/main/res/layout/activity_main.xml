@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFA8A8"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtHeading"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntubold"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:includeFontPadding="false"
+        android:text="My Notes!"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/notesRecycler"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/TxtHeading"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addNotesBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_18sdp"
+        android:contentDescription="TODO"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/baseline_add_24"
+        app:maxImageSize="@dimen/_30sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
