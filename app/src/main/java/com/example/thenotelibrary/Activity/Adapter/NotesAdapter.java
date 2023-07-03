@@ -38,6 +38,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.notesViewHol
         holder.title.setText(noteDataOfPosition.NotesTitle);
         holder.subtitle.setText(noteDataOfPosition.NotesSubtitle);
         holder.notes.setText(noteDataOfPosition.Notes);
+        holder.date.setText(noteDataOfPosition.NotesDate);
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent= new Intent(mainActivity, UpdateNotesActivity.class);
@@ -58,7 +59,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.notesViewHol
     }
 
     public static class notesViewHolder extends RecyclerView.ViewHolder {
-      TextView title, subtitle, notes;
+      TextView title, subtitle, notes, date;
 
         public notesViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,6 +67,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.notesViewHol
             title = itemView.findViewById(R.id.notesTitle);
             subtitle=itemView.findViewById(R.id.subtitle);
             notes=itemView.findViewById(R.id.notes);
+            date = itemView.findViewById(R.id.notesDate);
         }
     }
 }

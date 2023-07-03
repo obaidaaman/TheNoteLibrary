@@ -15,7 +15,7 @@
         android:fontFamily="@font/ubuntubold"
         android:layout_marginStart="@dimen/_12sdp"
         android:includeFontPadding="false"
-        android:text="My Notes!"
+        android:text="My Notes"
         android:textSize="@dimen/_20sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

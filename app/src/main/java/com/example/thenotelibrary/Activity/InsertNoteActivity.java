@@ -64,7 +64,7 @@ public class InsertNoteActivity extends AppCompatActivity {
 
     private void saveNotes(String title,String subtitle, String  notes){
         if (title.isEmpty()){
-            Toast.makeText(this, "Title Cannot be emptl", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Title Cannot be empty ", Toast.LENGTH_SHORT).show();
 
             return;
 

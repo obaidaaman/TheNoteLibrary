@@ -47,14 +47,16 @@ public class UpdateNotesActivity extends AppCompatActivity {
         notes=findViewById(R.id.upnotes);
         btnUpdate=findViewById(R.id.btnUpdate);
 
-        title.setText(stitle);
-        subtitle.setText(ssubtitle);
-        notes.setText(snotes);
+
 
         sid=getIntent().getIntExtra("id",0);
         stitle=getIntent().getStringExtra("title");
         ssubtitle=getIntent().getStringExtra("Subtitle");
         snotes=getIntent().getStringExtra("NotesData");
+
+        title.setText(stitle);
+        subtitle.setText(ssubtitle);
+        notes.setText(snotes);
 
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
@@ -63,10 +65,11 @@ public class UpdateNotesActivity extends AppCompatActivity {
                 String title1= title.getText().toString();
                 String subtitle1= subtitle.getText().toString();
                 String notes1= notes.getText().toString();
+                UpdateNotes(title1,subtitle1,notes1);
             }
         });
 
-        UpdateNotes(stitle,ssubtitle,snotes);
+
 
 
     }

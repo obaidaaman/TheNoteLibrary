@@ -8,6 +8,7 @@
     <View
         android:layout_width="100dp"
         android:layout_height="10dp"
+        android:layout_gravity="center"
         android:background="@drawable/delete_indicator_shape"
         android:layout_margin="7dp"/>
     <TextView
